@@ -40,3 +40,39 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//DOM IS AWESOME
+const title = document.createElement('h1');
+title.textContent = 'DOM is Awesome';
+const dom = document.querySelector('.cta');
+dom.append(title);
+
+//CIRCLE IMAGE
+let topImg = document.getElementById("cta-img");
+topImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+//BUTTON
+const btnId = document.querySelector('button');
+btnId.textContent = 'Get Started';
+
+
+
+//TOP CONTENT
+const newPTag = document.createElement('p');
+newPTag.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+const topContent = document.querySelector('.top-content');
+topContent.append(newPTag);
+
+//SECOND CONTENT
+const newTag = document.createElement('p');
+newTag.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+const textContent = document.querySelector('.text-content');
+textContent.append(newTag);
+
+//MIDDLE BAR IMAGE
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//BOTTOM FIRST
